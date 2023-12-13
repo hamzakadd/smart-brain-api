@@ -6,9 +6,6 @@ const metadata = new grpc.Metadata();
 
 metadata.set("authorization", "Key e2ad72adb7bf4f87b435c8766f2e6511");
 
-const clarifai = require ('clarifai')
-console.log(clarifai)
-
 
 const handleApiCall = (req, res) => {
   stub.PostModelOutputs(
